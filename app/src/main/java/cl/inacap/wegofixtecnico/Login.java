@@ -41,11 +41,13 @@ public class Login extends AppCompatActivity {
     private Button btnIniciarSesion;
     private Button btnRegistrarse;
 
+
     public Login() {
     }
 
 
     //codigo para el correcto funcionamiento del login
+
 
 
     @Override
@@ -66,6 +68,7 @@ public class Login extends AppCompatActivity {
 
                 String usuario = txtUsuario.getText().toString();
                 String contrasena = txtContraseña.getText().toString();
+                String  hola ="hola";
                 if (!usuario.equals("") && !contrasena.equals("") && !usuario.isEmpty() && !contrasena.isEmpty()) {
                     enviarRequest(usuario, contrasena);
                 } else {
