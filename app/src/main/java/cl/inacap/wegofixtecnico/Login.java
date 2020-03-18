@@ -46,7 +46,6 @@ public class Login extends AppCompatActivity {
     }
 
 
-    //codigo para el correcto funcionamiento del login
 
 
 
@@ -68,7 +67,6 @@ public class Login extends AppCompatActivity {
 
                 String usuario = txtUsuario.getText().toString();
                 String contrasena = txtContraseña.getText().toString();
-                String  hola ="holaffffgfdgsfgsfgsfgsfdgsfdgf";
                 if (!usuario.equals("") && !contrasena.equals("") && !usuario.isEmpty() && !contrasena.isEmpty()) {
                     enviarRequest(usuario, contrasena);
                 } else {
