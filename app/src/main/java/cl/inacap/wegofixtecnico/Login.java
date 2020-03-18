@@ -44,6 +44,10 @@ public class Login extends AppCompatActivity {
     public Login() {
     }
 
+
+    //codigo para el correcto funcionamiento del login
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
