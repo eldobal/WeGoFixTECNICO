@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SolicitudAtendida"
+        tools:visibility="visible">
+
+    <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="129dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="116dp"
+            android:fontFamily="sans-serif-black"
+            android:hint="Fecha"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline37"
+            app:layout_constraintTop_toBottomOf="@+id/tvIdSolicitud" />
+
+    <ImageView
+            android:id="@+id/ivPerfil2"
+            android:layout_width="132dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline38"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline36"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/baldo" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="395dp" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="395dp" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="149dp" />
+
+    <TextView
+            android:id="@+id/tvUsuario"
+            android:layout_width="129dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="116dp"
+            android:fontFamily="sans-serif-black"
+            android:hint="Usuario"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline37"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="129dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="112dp"
+            android:fontFamily="sans-serif-black"
+            android:hint="Estado"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline37"
+            app:layout_constraintTop_toBottomOf="@+id/tvFecha" />
+
+    <TextView
+            android:id="@+id/tvIdSolicitud"
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="116dp"
+            android:fontFamily="sans-serif-black"
+            android:hint="Codigo Solicitud"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline37"
+            app:layout_constraintTop_toBottomOf="@+id/tvUsuario" />
+
+    <Button
+            android:id="@+id/btnBoton"
+            android:layout_width="123dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/material_deep_teal_20"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintEnd_toStartOf="@+id/guideline37"
+            app:layout_constraintHorizontal_bias="0.981"
+            app:layout_constraintStart_toStartOf="@+id/guideline38"
+            app:layout_constraintTop_toBottomOf="@+id/txtTexto" />
+
+    <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="162dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="56dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="FINALIZAR"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintEnd_toStartOf="@+id/guideline37"
+            app:layout_constraintTop_toTopOf="@+id/rbg" />
+
+    <EditText
+            android:id="@+id/txtTexto"
+            android:layout_width="360dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/guideline37"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="@+id/guideline36"
+            app:layout_constraintTop_toBottomOf="@+id/svDescripcion" />
+
+    <ScrollView
+            android:id="@+id/svDescripcion"
+            android:layout_width="359dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline37"
+            app:layout_constraintStart_toStartOf="@+id/guideline36"
+            app:layout_constraintTop_toBottomOf="@+id/tvEstado">
+
+        <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-black"
+                android:hint="Descripcion"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+    </ScrollView>
+
+    <EditText
+            android:id="@+id/txtPrecio"
+            android:layout_width="212dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Precio"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/guideline37"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toStartOf="@+id/guideline36"
+            app:layout_constraintTop_toBottomOf="@+id/txtTexto" />
+
+    <RadioGroup
+            android:id="@+id/rbg"
+            android:layout_width="128dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="264dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline36"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrecio"
+            app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+                android:id="@+id/rbNoPagada"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="No pagado"
+                tools:layout_editor_absoluteX="-122dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        <RadioButton
+                android:id="@+id/rbPagada"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Pagado" />
+
+    </RadioGroup>
+
+    <TextView
+            android:id="@+id/tvAviso"
+            android:layout_width="342dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/rbg"
+            app:layout_constraintEnd_toStartOf="@+id/guideline37"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline36"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrecio"
+            app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

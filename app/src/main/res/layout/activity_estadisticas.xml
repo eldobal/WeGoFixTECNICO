@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Estadisticas">
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="50dp"
+            android:text="Ganancias totales:" />
+
+    <TextView
+            android:id="@+id/txtGanancias"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:text="TextView" />
+
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="35dp"
+            android:text="Solicitudes realizadas:" />
+
+    <TextView
+            android:id="@+id/txtSolicitudes"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtGanancias"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="13dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:text="TextView" />
+
+    <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="31dp"
+            android:text="Calificacion:" />
+
+    <TextView
+            android:id="@+id/txtCalificacion"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSolicitudes"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="33dp"
+            android:layout_toEndOf="@+id/textView6"
+            android:text="TextView" />
+
+    <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginEnd="127dp"
+            android:text="VOLVER" />
+</RelativeLayout>

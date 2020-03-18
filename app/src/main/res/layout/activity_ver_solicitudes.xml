@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".VerSolicitudes">
+
+    <ListView
+            android:id="@+id/lvSolicitudes"
+            android:layout_width="match_parent"
+            android:layout_height="438dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="183dp"
+            android:layout_marginBottom="110dp" />
+
+    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="237dp"
+            android:layout_height="161dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="84dp"
+            app:srcCompat="@drawable/ic_logo" />
+
+    <TextView
+            android:id="@+id/tvNoRegistros"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="158dp"
+            android:layout_marginEnd="18dp"
+            android:fontFamily="sans-serif-black"
+            android:hint="Solicitudes Pendientes"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    <ImageButton
+            android:id="@+id/btnVolver"
+            android:layout_width="49dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="11dp"
+            android:background="@color/colorPrimaryDark"
+            android:rotation="180"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+</RelativeLayout>
