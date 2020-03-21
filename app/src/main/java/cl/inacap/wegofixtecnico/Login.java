@@ -68,7 +68,8 @@ public class Login extends AppCompatActivity {
                 String usuario = txtUsuario.getText().toString();
                 String contrasena = txtContraseña.getText().toString();
                 if (!usuario.equals("") && !contrasena.equals("") && !usuario.isEmpty() && !contrasena.isEmpty()) {
-                    enviarRequest(usuario, contrasena);
+                    // enviarRequest(usuario, contrasena);
+                    Toast.makeText(getApplicationContext(), "exito", Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_LONG).show();
                 }
@@ -160,4 +161,6 @@ public class Login extends AppCompatActivity {
 
         return prefs.getString("Contraseña", "");
     }
+
+
 }
